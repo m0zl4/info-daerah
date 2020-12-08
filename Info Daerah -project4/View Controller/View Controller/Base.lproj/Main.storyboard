@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="View_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eit-Np-vMK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellProvinsi" rowHeight="120" id="w7F-BU-1tD" customClass="ProvinsiTableViewCell" customModule="View_Controller" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7F-BU-1tD" id="S7K-3b-alK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXX-8S-JIL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jakarta" translatesAutoresizingMaskIntoConstraints="NO" id="hZp-iK-Psr">
+                                                            <rect key="frame" x="15" y="30" width="70" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="PW8-T9-jtm"/>
+                                                                <constraint firstAttribute="width" constant="70" id="wka-q1-XHL"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jakarta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-41-KOy">
+                                                            <rect key="frame" x="95" y="10" width="309" height="100"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="hZp-iK-Psr" firstAttribute="leading" secondItem="VXX-8S-JIL" secondAttribute="leading" constant="15" id="2LL-pH-0RR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Yyx-41-KOy" secondAttribute="bottom" constant="10" id="Ira-7o-mcG"/>
+                                                        <constraint firstItem="Yyx-41-KOy" firstAttribute="leading" secondItem="hZp-iK-Psr" secondAttribute="trailing" constant="10" id="KFW-eb-J0n"/>
+                                                        <constraint firstItem="Yyx-41-KOy" firstAttribute="top" secondItem="VXX-8S-JIL" secondAttribute="top" constant="10" id="pTb-Af-4y8"/>
+                                                        <constraint firstItem="hZp-iK-Psr" firstAttribute="centerY" secondItem="VXX-8S-JIL" secondAttribute="centerY" id="qn2-R7-WRv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Yyx-41-KOy" secondAttribute="trailing" constant="10" id="vYp-j2-j81"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VXX-8S-JIL" firstAttribute="top" secondItem="S7K-3b-alK" secondAttribute="top" id="3Ah-gw-Deg"/>
+                                                <constraint firstAttribute="trailing" secondItem="VXX-8S-JIL" secondAttribute="trailing" id="7Rp-C8-gAT"/>
+                                                <constraint firstAttribute="bottom" secondItem="VXX-8S-JIL" secondAttribute="bottom" id="FBJ-hi-rrG"/>
+                                                <constraint firstItem="VXX-8S-JIL" firstAttribute="leading" secondItem="S7K-3b-alK" secondAttribute="leading" id="J7Q-s8-Iz7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="provinsiImg" destination="hZp-iK-Psr" id="veI-j6-ggF"/>
+                                            <outlet property="provinsiLbael" destination="Yyx-41-KOy" id="njI-MS-pak"/>
+                                            <outlet property="provinsiView" destination="VXX-8S-JIL" id="laH-A6-dx3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eit-Np-vMK" secondAttribute="bottom" id="TDe-uB-H87"/>
+                            <constraint firstItem="eit-Np-vMK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UxV-eP-5aV"/>
+                            <constraint firstItem="eit-Np-vMK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kJc-fy-5vi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eit-Np-vMK" secondAttribute="trailing" id="qYZ-5D-6kl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="provinsiTableView" destination="eit-Np-vMK" id="b35-VU-2e7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jakarta" width="157" height="157"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
